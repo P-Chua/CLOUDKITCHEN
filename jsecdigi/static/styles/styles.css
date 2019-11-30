@@ -1,0 +1,14 @@
+table {
+    color: blueviolet;
+    text-decoration: none;
+    padding: 5px 800px;
+    font-family: "Roboto", sans-serif;
+    font-size: 5px;
+}
+
+body {
+    color: blue;
+    font-family: monospace;
+    font-size: 10000px;
+}
+

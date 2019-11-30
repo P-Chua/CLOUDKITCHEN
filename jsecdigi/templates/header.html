@@ -1,0 +1,20 @@
+<html>
+<header>
+<link rel='stylesheet' type="text/css" href= "/static/styles/styles.css">   
+</header>  
+    <body background="static/images/jsecbg.jpg" background-position="center" background-size="cover">
+        <p style="font-size: 50px">
+        <a href='/'>Home</a> || 
+        <a href='/products'>Products</a> || 
+        <a href='/branches'>Branches</a> ||
+        {% if session["user"] is defined %}
+        Welcome, {{ session["user"]["first_name"] }}.
+        <a href='/cart'>View Cart</a> |
+        <a href='/logout'>Logout</a>
+        {% else %}
+        <a href='/login'>Login</a>
+        {% endif %}
+        </p>   
+    </body>
+</html>
+
